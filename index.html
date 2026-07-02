@@ -3,76 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/ps-logo.png">
     <title>Pocket Stories - Galerie Twitch</title>
 </head>
 <html>
   <body>
+    <div class="liner"></div>
+    <h1>Les Pocket Streameur.ses</h1>
+    <h3>pocket stories rp</h3>
+    <div class="liner"></div>
+    
     <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
+    <div id="iframe-container">
+      <div class="twitch-embed">
+        <div class="twitch-block" id="twitch-axo">
+          <span class="stream-name">🩵 JOUEUSE</span>
+        </div>
+        <div class="twitch-block" id="twitch-cro">
+          <span class="stream-name">🔨 STAFF</span>
+        </div>
+        <div class="twitch-block" id="twitch-eaz">
+          <span class="stream-name">🛠️ ADMiN</span>
+        </div>
+        <div class="twitch-block" id="twitch-hie">
+          <span class="stream-name">🔨 STAFF</span>
+        </div>
+        <div class="twitch-block" id="twitch-lan">
+          <span class="stream-name">🔨 STAFF</span>
+        </div>
+        <div class="twitch-block" id="twitch-nhe">
+          <span class="stream-name">🛠️ ADMiN</span>
+        </div>
+        <div class="twitch-block" id="twitch-oly">
+          <span class="stream-name">🔨 STAFF</span>
+        </div>
+        <div class="twitch-block" id="twitch-try">
+          <span class="stream-name">🩵 JOUEUR</span>
+        </div>
+        <div class="twitch-block" id="twitch-zel">
+          <span class="stream-name">🩵 JOUEUR</span>
+        </div>
+      </div>
+    </div>
 
     <!-- Load the Twitch embed JavaScript file -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+
+    <!-- Axokina -->
     <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "trysgard",
-        layout: "video",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
+      new Twitch.Embed("twitch-axo", {
         width: 854,
         height: 480,
         channel: "axokina",
         layout: "video",
+        autoplay: "false",
         // Only needed if this page is going to be embedded on other websites
         parent: ["www.twitch-gallery.github.io"]
       });
     </script>
+    <!-- Lanval_le_preux -->
     <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "crononatsuga",
-        layout: "video",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "nhelim",
-        layout: "video",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "eazy_vi",
-        layout: "video",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
+      new Twitch.Embed("twitch-lan", {
         width: 854,
         height: 480,
         channel: "lanval_le_preux",
         layout: "video",
+        autoplay: "false",
         // Only needed if this page is going to be embedded on other websites
         parent: ["www.twitch-gallery.github.io"]
       });
     </script>
+    <!-- CronoNastuga -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-cro", {
+        width: 854,
+        height: 480,
+        channel: "crononatsuga",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Eazy -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-eaz", {
+        width: 854,
+        height: 480,
+        channel: "eazy_vi",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- HielPolaris -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-hie", {
+        width: 854,
+        height: 480,
+        channel: "hielpolaris",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Nhelim -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-nhe", {
+        width: 854,
+        height: 480,
+        channel: "nhelim",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Olympic -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-oly", {
+        width: 854,
+        height: 480,
+        channel: "olympic_fr",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Trysgard -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-try", {
+        width: 854,
+        height: 480,
+        channel: "trysgard",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- TheZelias -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-zel", {
+        width: 854,
+        height: 480,
+        channel: "thezelias",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <div class="liner"></div>
+    <div class="getprojects">
+      <h4>Projets passés</h4>
+      <span><b>● (29/05/2026) "Le Tour Bus" → <a href="https://www.youtube.com/watch?v=xP9mrRFcAHk" target="_blank" rel="noopener noreferrer">Recap multi POV</a></b></span>
+    </div>
+    <div class="getprojects">
+      <h4>En cours / Prochain scénario</h4>
+      <span><b>(03/06/2026) "Humane Labs :  Les gentils scientifiques ont voulu jouer avec le feu"</b></span>
+    </div>
   </body>
+  <div class="liner"></div>
+  <footer>
+      <span id="quote">Projet initié par <b><a href="https://www.twitch.tv/nhelim" target="_blank" rel="noopener noreferrer">Nhelim</a></b> 
+            avec le soutien absolu de 
+            <b>IamYou</b>
+            et
+            <b><a href="https://www.twitch.tv/eazy_vi" target="_blank" rel="noopener noreferrer">Eazy_V</a></b>
+      </span>
+      <br>
+      <span id="quote">Développé à la perfection par <b>Khobs</b>, <b>Abesses</b> et <b>Slart</b></a>
+      </span>
+      <br>
+      <span id="quote">Accompagné.es par un staff de qualité 
+        <b><a href="https://www.twitch.tv/crononatsuga" target="_blank" rel="noopener noreferrer">Crono Natsuga</a></b>
+        , 
+        <b><a href="https://www.twitch.tv/olympic_fr" target="_blank" rel="noopener noreferrer">Olympic_FR</a></b>
+         et
+        <b><a href="https://www.twitch.tv/lanval_le_preux" target="_blank" rel="noopener noreferrer">Lanval_le_preux</a></b>
+      </span>
+  </footer>
+  <div class="liner"></div>
 </html>

@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'AlienLeague';
+    src: url(fonts/alienleagueiibold.ttf);
+}
+@font-face {
+    font-family: 'W95FA';
+    src: url(fonts/W95FA.otf);
+}
+
+body {
+    background-image: url(imgs/ps-bg.jpg);
+    background-size: 50%;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#iframe-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.twitch-embed
+ {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+@media (max-width: 900px) {
+    .twitch-embed {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1350px) {
+    .twitch-embed {
+        grid-template-columns: repeat(2, 450px);
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 1690px) {
+    .twitch-embed {
+        grid-template-columns: repeat(3, 450px);
+    }
+}
+
+@media (min-width: 1691px) {
+    .twitch-embed {
+        grid-template-columns: repeat(4, 450px);
+    }
+}
+
+iframe {
+    border: 1px solid #3c597d;
+    box-shadow: 3px 3px 4px 0px #8b63106e;
+    max-width: 450px;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    transition: box-shadow .25s;
+}
+
+.stream-name {
+    display: none;
+    font-size: 35px;
+    color: antiquewhite;
+    text-align: left;
+    font-family: 'AlienLeague';
+    text-shadow:
+       -2px -2px 0 black,
+        2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+}
+
+.twitch-block:hover iframe {
+    box-shadow: 5px 5px 6px 0px #8b63106e;
+    transition: box-shadow .5s;
+}
+
+h1 {
+   text-shadow:
+       -2px -2px 0 black,
+        2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    margin: 0;
+    font-size: 100px;
+    background-color: #00000038;
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'AlienLeague';
+}
+
+h3 {
+   text-shadow:
+       -2px -2px 0 black,
+        2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    background-color: #00000038;
+    margin: 0;
+    font-size: 50px;
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'AlienLeague';
+}
+
+.getprojects {
+    margin: 20px;
+    font-size: 20px;
+}
+
+h4 {
+    text-shadow:
+       -2px -2px 0 black,
+        2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    margin: 0;
+    font-size: 35px;
+    color: antiquewhite;
+    font-family: 'AlienLeague';
+}
+
+footer {
+    background-color: #00000038;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#quote {
+    font-size: 20px;
+    margin: 10px;
+    color: antiquewhite;
+    font-family: 'W95FA';
+}
+b {
+    font-weight: bold;
+    color: rgb(255, 183, 88);
+    font-family: 'W95FA';
+}
+a {
+    color: rgb(255, 183, 88);
+    font-family: 'W95FA';
+}
+a:hover {
+    transition: all .25s;
+    text-shadow:
+       -2px -2px 0 black,
+        2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    color: rgb(255, 172, 63);
+}
+
+.liner {
+    border-bottom: 3px solid #8b63106e;
+    box-shadow: 2px 2px 2px 0px #8b63106e;    
+}

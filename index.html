@@ -38,7 +38,13 @@
         <div class="twitch-block" id="twitch-oly">
           <span class="stream-name">🔨 STAFF</span>
         </div>
+        <div class="twitch-block" id="twitch-pyr">
+          <span class="stream-name">🩵 JOUEUR</span>
+        </div>
         <div class="twitch-block" id="twitch-try">
+          <span class="stream-name">🩵 JOUEUR</span>
+        </div>
+        <div class="twitch-block" id="twitch-zau">
           <span class="stream-name">🩵 JOUEUR</span>
         </div>
         <div class="twitch-block" id="twitch-zel">
@@ -136,12 +142,36 @@
         parent: ["www.twitch-gallery.github.io"]
       });
     </script>
+    <!-- Pyrim -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-pyr", {
+        width: 854,
+        height: 480,
+        channel: "pyrim_",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
     <!-- Trysgard -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-try", {
         width: 854,
         height: 480,
         channel: "trysgard",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Zauma -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-zau", {
+        width: 854,
+        height: 480,
+        channel: "xzauma",
         layout: "video",
         autoplay: "false",
         // Only needed if this page is going to be embedded on other websites

@@ -8,7 +8,42 @@
     <title>Pocket Stories - Galerie Twitch</title>
 </head>
 <html>
-  <body>
+  <body id="mainer">
+  <div id="notation-expanded">
+    <h1>À PROPOS DE L'ÉDiTEUR</h1>
+    <span>
+      Ouvrons un livre...
+      <br>
+      Lorsque j'ai commencé à me connecter à l'univers du modding c'était sur GTA : San Andreas.
+      <br>
+      Blender & l'open-source existaient à peine. Le modding était alors réservé à la plus coriaces des espèces &
+      j'étais tout juste capable de créer des textures customs pour continuer à me faire rêver au travers de mon expérience "vanilla". 
+      <br>
+      Aujourd'hui, tout à changé & j'ai pris ma revanche grâce à une communauté riche en partage. C'est moi le mappeur fou qui visualise ces aventures.
+      <br>
+      Si tu lis ce texte, reste donc jusqu'au bout, tu est tombé.e sur un easter egg (le fameux oeuf)
+      <br>
+      En 2023 je me suis replongé dans le roleplay pour ensuite monter mon premier projet en 2025 avec la <i>Random Team</i>. <i><b>Open Space RP</b></i> était né.
+      <br>
+      Avec mes accolytes, on a envoyé un gros projet qui m'a pris un an à mapper, sans quasi aucune connaissance.
+      <br>
+      Et maintenant je suis là. Avec 150 idées à la secondes, des projets musicaux & visuels jamais terminés.
+      <br>
+      Ce projet m'ouvre une porte, LA CRÉATION
+      <br>
+      Et c'est avec vous qu'on va continuer à le faire.
+      <br>
+      J'ai construit un logo, un  thème musical, multiples maps, quelques scripts aussi...
+      <br>
+      Mais.. sans mon équipe j'aurais jamais pu y arriver. Ce pavé est mon "égo-trip"...
+      <br>
+      Continuez à nous faire rêver à votre tour, donnez le meilleur de vous-même !
+      <br>
+      Et si toi là ! T'as tenu jusqu'ici. Prends donc la liberté de me contacter pour recevoir un p'tit cadeau de ma part 👀 
+      <br>
+      - EAZY
+    </span>
+  </div>
     <div class="liner"></div>
     <h1>Les Pocket Streameur.ses</h1>
     <h3>pocket stories rp</h3>
@@ -209,6 +244,7 @@
     <div class="getprojects">
       <h4>Projets passés</h4>
       <span><b>● (29/05/2026) "Le Tour Bus" → <a href="https://www.youtube.com/watch?v=xP9mrRFcAHk" target="_blank" rel="noopener noreferrer">Recap multi POV</a></b></span>
+      <br>
       <span><b>● (03/06/2026) "Humane Labs :  Les gentils scientifiques ont voulu jouer avec le feu" → <a href="https://youtube.com/playlist?list=PLYpHEk7Aw1NA&si=nQm-UC02sHH1ZEQj" target="_blank" rel="noopener noreferrer">Playlists des joueur.ses</a></b></span>
     </div>
     <div class="getprojects">
@@ -222,7 +258,7 @@
             avec le soutien absolu de 
             <b>IamYou</b>
             et
-            <b><a href="https://www.twitch.tv/eazy_vi" target="_blank" rel="noopener noreferrer">Eazy_V</a></b>
+            <b><a href="https://www.twitch.tv/eazy_vi" target="_blank" rel="noopener noreferrer">Eazy_V</a> <sup id="notations">♪</sup></b>
       </span>
       <br>
       <span id="quote">Développé à la perfection par <b>Khobs</b>, <b>Abesses</b> et <b>Slart</b></a>
@@ -237,4 +273,25 @@
       </span>
   </footer>
   <div class="liner"></div>
+  <script>
+    const not1 = document.getElementById("notations");
+    const not2 = document.getElementById("notation-expanded");
+    const not3 = document.getElementById("mainer");
+      not1.addEventListener("click", () => {
+            not2.style.display = "block";
+            mainer.style.overflow = "hidden";
+          window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth"
+          });
+        });
+      not2.addEventListener("click", () => {
+            not2.style.display = "none";
+            mainer.style.overflow = "visible";
+        });
+        
+  </script>
+
+  </script>
 </html>

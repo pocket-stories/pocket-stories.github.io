@@ -84,10 +84,10 @@
         <div class="twitch-block" id="twitch-pyr">
           <span class="stream-name">🩵 JOUEUR</span>
         </div>
-      -->
         <div class="twitch-block" id="twitch-rur">
           <span class="stream-name">🩵 JOUEUR</span>
         </div>
+      -->
         <div class="twitch-block" id="twitch-sel">
           <span class="stream-name">🩵 JOUEUSE</span>
         </div>
@@ -99,13 +99,16 @@
         <div class="twitch-block" id="twitch-try">
           <span class="stream-name">🩵 JOUEUR</span>
         </div>
+        <div class="twitch-block" id="twitch-wam">
+          <span class="stream-name">🔨 STAFF</span>
+        </div>
       <!--
         <div class="twitch-block" id="twitch-won">
           <span class="stream-name">🩵 JOUEUSE</span>
         </div>
       -->
         <div class="twitch-block" id="twitch-zau">
-          <span class="stream-name">🩵 JOUEUR</span>
+          <span class="stream-name">🔨 STAFF</span>
         </div>
       <!--
         <div class="twitch-block" id="twitch-zel">
@@ -233,7 +236,7 @@
       });
     </script>
     -->
-    <!-- Ruruissime -->
+    <!-- Ruruissime
     <script type="text/javascript">
       new Twitch.Embed("twitch-rur", {
         width: 854,
@@ -245,6 +248,7 @@
         parent: ["www.twitch-gallery.github.io"]
       });
     </script>
+    -->
     <!-- Trysgard -->
     <script type="text/javascript">
       new Twitch.Embed("twitch-try", {
@@ -276,6 +280,18 @@
         width: 854,
         height: 480,
         channel: "selinum",
+        layout: "video",
+        autoplay: "false",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["www.twitch-gallery.github.io"]
+      });
+    </script>
+    <!-- Wambou -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-wam", {
+        width: 854,
+        height: 480,
+        channel: "wambou",
         layout: "video",
         autoplay: "false",
         // Only needed if this page is going to be embedded on other websites

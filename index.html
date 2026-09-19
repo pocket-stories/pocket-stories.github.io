@@ -1,413 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/ps-logo.png">
-    <title>Pocket Stories - Galerie Twitch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Stories — Galerie Twitch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/ps-logo.png">
+
 </head>
-<html>
-  <body id="mainer">
-  <div id="notation-expanded">
-    <h1>À PROPOS DE L'ÉDiTEUR</h1>
-    <span>
-      Ouvrons un livre...
-      <br>
-      Lorsque j'ai commencé à me connecter à l'univers du modding c'était sur GTA : San Andreas.
-      <br>
-      Blender & l'open-source existaient à peine. Le modding était alors réservé à la plus coriaces des espèces &
-      j'étais tout juste capable de créer des textures customs pour continuer à me faire rêver au travers de mon expérience "vanilla". 
-      <br>
-      Aujourd'hui, tout à changé & j'ai pris ma revanche grâce à une communauté riche en partage. C'est moi le mappeur fou qui visualise ces aventures.
-      <br>
-      Si tu lis ce texte, reste donc jusqu'au bout, tu est tombé.e sur un easter egg (le fameux oeuf)
-      <br>
-      En 2023 je me suis replongé dans le roleplay pour ensuite monter mon premier projet en 2025 avec la <i>Random Team</i>. <i><b>Open Space RP</b></i> était né.
-      <br>
-      Avec mes accolytes, on a envoyé un gros projet qui m'a pris un an à mapper, sans quasi aucune connaissance.
-      <br>
-      Et maintenant je suis là. Avec 150 idées à la secondes, des projets musicaux & visuels jamais terminés.
-      <br>
-      Mais ce projet m'ouvre une porte, UNE NOUVELLE FAÇON DE CRÉER !
-      <br>
-      Et c'est avec vous qu'on va continuer à le faire.
-      <br>
-      J'ai construit un logo, un  thème musical, multiples maps (toutes en fait), quelques scripts aussi...
-      <br>
-      Mais.. sans mon équipe j'aurais jamais pu y arriver. Ce pavé est mon "égo-trip"...
-      <br>
-      Continuez à nous faire rêver à votre tour, donnez le meilleur de vous-même !
-      <br>
-      Et si toi là ! T'as tenu jusqu'ici, merci & bisous 
-      <br>
-      - EAZY
-    </span>
-  </div>
-    <div class="liner"></div>
-    <h1>Les Pocket Streameur.ses</h1>
-    <h3>pocket stories rp</h3>
-    <div class="liner"></div>
-    
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="iframe-container">
-      <div class="twitch-embed">
-        <div class="twitch-block" id="twitch-axo">
-          <span class="stream-name">🩵 JOUEUSE</span>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">POCKET STORIES RP</p>
+      <h1>Les Pocket Streameur.ses</h1>
+    </div>
+    <div class="brand">POCKET<br><span>STORiES</span></div>
+  </header>
+  <main class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <div>
+          <h2 style="color:var(--gold);">streams</h2>
+          <p id="member-count">0 lives</p>
         </div>
-      <!--
-        <div class="twitch-block" id="twitch-cro">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-      -->
-        <div class="twitch-block" id="twitch-eaz">
-          <span class="stream-name">🛠️ ADMiN</span>
-        </div>
-        <div class="twitch-block" id="twitch-hie">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-      <!--
-        <div class="twitch-block" id="twitch-kag">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-      -->
-        <div class="twitch-block" id="twitch-lan">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-        <div class="twitch-block" id="twitch-nhe">
-          <span class="stream-name">🛠️ ADMiN</span>
-        </div>
-        <div class="twitch-block" id="twitch-oly">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-      <!--
-        <div class="twitch-block" id="twitch-pyr">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-        <div class="twitch-block" id="twitch-rur">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-      -->
-        <div class="twitch-block" id="twitch-sel">
-          <span class="stream-name">🩵 JOUEUSE</span>
-        </div>
-      <!--
-        <div class="twitch-block" id="twitch-ter">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-      -->
-        <div class="twitch-block" id="twitch-try">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-        <div class="twitch-block" id="twitch-wam">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-      <!--
-        <div class="twitch-block" id="twitch-won">
-          <span class="stream-name">🩵 JOUEUSE</span>
-        </div>
-      -->
-        <div class="twitch-block" id="twitch-zau">
-          <span class="stream-name">🔨 STAFF</span>
-        </div>
-      <!--
-        <div class="twitch-block" id="twitch-zel">
-          <span class="stream-name">🩵 JOUEUR</span>
-        </div>
-        <div class="twitch-block" id="twitch-zer">
-          <span class="stream-name">🩵 JOUEUSE</span>
-        </div>
-      -->
+        <span class="live-count" id="live-count">● 0 LIVES ACTIFS</span>
       </div>
-    </div>
 
-    <!-- Load the Twitch embed JavaScript file -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+      <label class="search">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Rechercher..." autocomplete="off">
+      </label>
 
-    <!-- Axokina -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-axo", {
-        width: 854,
-        height: 480,
-        channel: "axokina",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- Lanval_le_preux -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-lan", {
-        width: 854,
-        height: 480,
-        channel: "lanval_le_preux",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- i_kagami_i -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-kag", {
-        width: 854,
-        height: 480,
-        channel: "i_kagami_i",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- CronoNastuga
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-cro", {
-        width: 854,
-        height: 480,
-        channel: "crononatsuga",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    -->
-    <!-- Eazy -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-eaz", {
-        width: 854,
-        height: 480,
-        channel: "eazy_vi",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- HielPolaris -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-hie", {
-        width: 854,
-        height: 480,
-        channel: "hielpolaris",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- Nhelim -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-nhe", {
-        width: 854,
-        height: 480,
-        channel: "nhelim",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- Olympic -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-oly", {
-        width: 854,
-        height: 480,
-        channel: "olympic_fr",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- Pyrim
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-pyr", {
-        width: 854,
-        height: 480,
-        channel: "pyrim_",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    -->
-    <!-- Ruruissime
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-rur", {
-        width: 854,
-        height: 480,
-        channel: "ruruissime",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    -->
-    <!-- Trysgard -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-try", {
-        width: 854,
-        height: 480,
-        channel: "trysgard",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- TerminaT
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-ter", {
-        width: 854,
-        height: 480,
-        channel: "dterminatd",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-     -->
-    <!-- Selinum -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-sel", {
-        width: 854,
-        height: 480,
-        channel: "selinum",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- Wambou -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-wam", {
-        width: 854,
-        height: 480,
-        channel: "wambou",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- w0ndermo
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-won", {
-        width: 854,
-        height: 480,
-        channel: "w0ndermo",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-     -->
-    <!-- Zauma -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-zau", {
-        width: 854,
-        height: 480,
-        channel: "xzauma",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    <!-- TheZelias
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-zel", {
-        width: 854,
-        height: 480,
-        channel: "thezelias",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-    -->
-    <!-- Zero
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-zer", {
-        width: 854,
-        height: 480,
-        channel: "zeroxephm",
-        layout: "video",
-        autoplay: "false",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["www.twitch-gallery.github.io"]
-      });
-    </script>
-     -->
-    <div class="liner"></div>
-    <div class="getprojects">
-      <h4>Projets passés</h4>
-      <span><b>● (29/05/2026) "Le Tour Bus" → <a href="https://www.youtube.com/watch?v=xP9mrRFcAHk" target="_blank" rel="noopener noreferrer">Recap multi POV</a></b></span>
-      <br>
-      <span><b>● (03/06/2026) "Humane Labs :  Les gentils scientifiques ont voulu jouer avec le feu" → <a href="https://youtube.com/playlist?list=PLYpHEk7Aw1NA&si=nQm-UC02sHH1ZEQj" target="_blank" rel="noopener noreferrer">Playlists des VOD</a></b></span>
-      <br>
-      <span><b>● (31/07/2026) "Lumières d'un autre monde" → <a href="">VOD coming soon...</a></b></span>
-    </div>
-    <div class="getprojects">
-      <h4>En cours / Prochain scénario</h4>
-      <span><b>(11/09/2026) Le Témoin</b></span>
-    </div>
-  </body>
-  <div class="liner"></div>
+      <div id="members" class="members"></div>
+    </aside>
+
+    <section class="viewer">
+      <div class="viewer-head">
+        <div>
+          <span class="viewer-label">STREAM SÉLECTIONNÉ</span>
+          <h2 id="stream-title">Sélectionnez un stream</h2>
+          <p id="stream-meta">Choisissez une personne dans la liste pour afficher son stream.</p>
+        </div>
+        <div id="stream-status" class="status offline">● HORS LIGNE</div>
+      </div>
+
+      <div class="player-shell">
+        <div id="player" class="player"></div>
+        <div id="empty-player" class="empty-player">
+          <div class="empty-icon">▶</div>
+          <h3>Prêt à regarder ?</h3>
+          <p>Sélectionnez un membre dans la liste.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="projects">
+    <h2 style="font-size: 32px; color: var(--gold);">PROCHAiN SCÉNARiO</h2>
+    <p>● (??/??/2026) <b>???</b></p>
+    <br>
+    <h2 style="font-size: 32px; color: var(--gold);">Projets passés</h2>
+    <p>● (29/05/2026) <b>Le Tour Bus</b> → <a href="https://www.youtube.com/watch?v=xP9mrRFcAHk" target="_blank" rel="noopener noreferrer">Recap multi POV</a></p>
+    <p>● (03/06/2026) <b>Humane Labs : "Les gentils scientifiques ont voulu jouer avec le feu"</b> → <a href="https://youtube.com/playlist?list=PLYpHEk7Aw1NA&si=nQm-UC02sHH1ZEQj" target="_blank" rel="noopener noreferrer">Playlists des joueur.ses</a></p>
+    <p>● (31/07/2026) <b>Lumières d'un autre monde</b> → <a href="">VODs coming soon...</a></p>
+    <p>● (11/09/2026) <b>Le Témoin</b> → <a href="">VODs coming soon...</a></p>
+  </section>
+
   <footer>
-      <span id="quote">Projet initié par <b><a href="https://www.twitch.tv/nhelim" target="_blank" rel="noopener noreferrer">Nhelim</a></b> 
-            avec le soutien absolu de 
-            <b>IamYou</b>
-            et
-            <b><a href="https://www.twitch.tv/eazy_vi" target="_blank" rel="noopener noreferrer">Eazy_V</a><sup id="notations">*</sup></b>
-      </span>
-      <br>
-      <span id="quote">Développé à la perfection par <b>Khobs</b>, <b>Abesses</b> et <b>Slart</b></a>
-      </span>
-      <br>
-      <span id="quote">Accompagné.es par un staff de qualité 
-        <b>Croissant</b>
-        , 
-        <b><a href="https://www.twitch.tv/olympic_fr" target="_blank" rel="noopener noreferrer">Olympic_FR</a></b>
-        ,
-        <b>HielPolaris</b>
+    Projet initié par 
+    <a href="https://www.twitch.tv/nhelim" target="_blank" rel="noopener noreferrer"><b>Nhelim</b></a>
+     avec le soutien absolu de 
+     <b>IamYou</b> et 
+     <a href="https://www.twitch.tv/eazy_vi" target="_blank" rel="noopener noreferrer"><b>Eazy_V</b></a>.
+     <br>
+     Développé à la perfection par <b>Khobs</b>, <b>Abesses</b> et <b>Slart</b></a>
+     <br>Accompagné.es par un staff de qualité 
+        <b>Croissant</b>, 
+        <a href="https://www.twitch.tv/olympic_fr" target="_blank" rel="noopener noreferrer"><b>Olympic_FR</b></a>,
+        <a href="https://www.twitch.tv/hielpolaris" target="_blank" rel="noopener noreferrer"><b>HielPolaris</b></a>
          et
-        <b><a href="https://www.twitch.tv/lanval_le_preux" target="_blank" rel="noopener noreferrer">Lanval_le_preux</a></b>
-      </span>
-      <br>
-      <span id="quote">Et d'une équipe sur-mesure de <b>helpeur.ses</b>
-      </span>
+        <a href="https://www.twitch.tv/lanval_le_preux" target="_blank" rel="noopener noreferrer"><b>Lanval_le_preux</b></a>
+     <br>
+     Et d'une équipe sur-mesure de <b>helpeur.ses</b>
   </footer>
-  <div class="liner"></div>
-  <script>
-    const not1 = document.getElementById("notations");
-    const not2 = document.getElementById("notation-expanded");
-    const not3 = document.getElementById("mainer");
-      not1.addEventListener("click", () => {
-            not2.style.display = "block";
-            mainer.style.overflow = "hidden";
-          window.scrollTo({
-              top: 0,
-              left: 0,
-              behavior: "smooth"
-          });
-        });
-      not2.addEventListener("click", () => {
-            not2.style.display = "none";
-            mainer.style.overflow = "visible";
-        });
-        
-  </script>
 
-  </script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <script src="members.js"></script>
+  <script src="twitch-config.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>

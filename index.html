@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pocket Stories — Galerie Twitch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>Pocket Stories — Streams</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="imgs/ps-logo.png">
-
 </head>
 <body>
   <header class="topbar">
@@ -16,30 +15,25 @@
     </div>
     <div class="brand">POCKET<br><span>STORiES</span></div>
   </header>
+
   <main class="dashboard">
     <aside class="sidebar">
       <div class="sidebar-head">
-        <div>
-          <h2 style="color:var(--gold);">streams</h2>
-          <p id="member-count">0 lives</p>
-        </div>
-        <span class="live-count" id="live-count">● 0 LIVES ACTIFS</span>
+        <div><h2 style="color:var(--gold);">streams</h2><p id="member-count">0 lives</p></div>
+        <span class="live-count" id="live-count">● — LIVE</span>
       </div>
-
-      <label class="search">
-        <span>⌕</span>
-        <input id="search" type="search" placeholder="Rechercher..." autocomplete="off">
-      </label>
-
-      <div id="members" class="members"></div>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher..." autocomplete="off"></label>
+      <div id="members" class="members" aria-live="polite"></div>
+      <div class="api-note" id="api-note" style="display: none;">Statut Twitch en attente…</div>
     </aside>
 
     <section class="viewer">
       <div class="viewer-head">
         <div>
           <span class="viewer-label">STREAM SÉLECTIONNÉ</span>
-          <h2 id="stream-title">Sélectionnez un stream</h2>
+          <h2 id="stream-title">Sélectionnez un membre</h2>
           <p id="stream-meta">Choisissez une personne dans la liste pour afficher son stream.</p>
+          <div id="scenarios"></div>
         </div>
         <div id="stream-status" class="status offline">● HORS LIGNE</div>
       </div>
@@ -52,6 +46,7 @@
           <p>Sélectionnez un membre dans la liste.</p>
         </div>
       </div>
+      <div class="player-foot"><span id="last-update">Statuts : —</span><button id="refresh" type="button" style="display: none;">↻ Actualiser</button></div>
     </section>
   </main>
 
@@ -86,7 +81,7 @@
 
   <script src="https://embed.twitch.tv/embed/v1.js"></script>
   <script src="members.js"></script>
-  <script src="twitch-config.js"></script>
+  <script src="site-config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

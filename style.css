@@ -241,6 +241,19 @@ h1 {
   opacity: .55;
   font-size: 16px;
 }
+#scenarios {
+  margin: 4px 0 0;
+  font-size: 16px;
+}
+
+.scenario-box {
+  padding: 2px;
+  margin: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  color: black;
+  background: var(--gold);
+}
 
 .status {
   flex: 0 0 auto;
